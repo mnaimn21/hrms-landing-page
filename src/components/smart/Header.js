@@ -6,21 +6,17 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Drawer from '@mui/material/Drawer'
-
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
-
 import useMediaQuery from '@mui/material/useMediaQuery';
-
 import awesomehr_logo from "../../assets/logo/awesomehr_logo.png"
-
 import { scroller } from 'react-scroll'
-
 import { AskForDemoContext } from '../../context/AskForDemoContext';
-
-
-
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Header = () => {
 
@@ -130,24 +126,44 @@ const Header = () => {
                 </Box>
             </Container>
             <Drawer open={openMobileDrawer} onClose={handleClickMenu} width={"25%"}>
-                <Box width={300}>
-                    <Box display="flex" justifyContent="flex-end">
-                        <IconButton onClick={handleClickMenu}>
-                            <CloseIcon color="primary"/>
-                        </IconButton>
-                    </Box>
-                    <Box textAlign="center">
-                        <Box component="img" alt="Awesome HR" src={awesomehr_logo} width={{xs:80, lg:48}} sx={{margin:"0 auto"}}/>
-                    </Box>
-                    <Grid container>
-                    {navButton.map((item) => 
-                    <Grid item xs={12}>
-                        <Box my={2} textAlign="center">
-                            <NavBarMenu item={item}/>
+                <Box height="100%" display="flex" flexDirection="column" justifyContent="space-between" pb={2}>
+                    <Box width={300}>
+                        <Box display="flex" justifyContent="flex-end">
+                            <IconButton onClick={handleClickMenu}>
+                                <CloseIcon color="primary"/>
+                            </IconButton>
                         </Box>
-                    </Grid>
-                    )}
-                    </Grid>
+                        <Box textAlign="center">
+                            <Box component="img" alt="Awesome HR" src={awesomehr_logo} width={{xs:80, lg:48}} sx={{margin:"0 auto"}}/>
+                        </Box>
+                        <Grid container>
+                        {navButton.map((item) => 
+                        <Grid item xs={12}>
+                            <Box my={2} textAlign="center">
+                                <NavBarMenu item={item}/>
+                            </Box>
+                        </Grid>
+                        )}
+                        </Grid>
+                    </Box>
+                    <Box>
+                        <Box>
+                            <Box display="flex" gap={2} alignItems="center" justifyContent="space-evenly" width="100%">
+                                <Link href="https://www.facebook.com" target="_blank" rel="noreferrer" display="flex" bgcolor="grey.light" sx={{"&: hover" : { backgroundColor:"primary.main"}}} width={24} height={24} justifyContent="center" alignItems="center" borderRadius={12}>
+                                    <FacebookRoundedIcon color="primary" sx={{fontSize:18, "&: hover" : {color:"white"}}}/>
+                                </Link>
+                                <Link href="https://www.twitter.com" target="_blank" rel="noreferrer" display="flex" bgcolor="grey.light" sx={{"&: hover" : { backgroundColor:"primary.main"}}} width={24} height={24} justifyContent="center" alignItems="center" borderRadius={12} >
+                                    <TwitterIcon color="primary" sx={{fontSize:18, "&: hover" : {color:"white"}}}/>
+                                </Link>
+                                    <Link href="https://www.instagram.com" target="_blank" rel="noreferrer" display="flex" bgcolor="grey.light" sx={{"&: hover" : { backgroundColor:"primary.main"}}} width={24} height={24} justifyContent="center" alignItems="center" borderRadius={12}>
+                                        <InstagramIcon color="primary" sx={{fontSize:18, "&: hover" : {color:"white"}}}/>
+                                    </Link>
+                                    <Link href="https://www.youtube.com" target="_blank" rel="noreferrer" display="flex" bgcolor="grey.light" sx={{"&: hover" : { backgroundColor:"primary.main"}}} width={24} height={24} justifyContent="center" alignItems="center" borderRadius={12}>
+                                        <YouTubeIcon color="primary" sx={{fontSize:18, "&: hover" : {color:"white"}}}/>
+                                </Link>
+                            </Box>
+                        </Box>
+                    </Box>
                 </Box>
             </Drawer>
         </Box>
