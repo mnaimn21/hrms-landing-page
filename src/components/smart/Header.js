@@ -51,7 +51,7 @@ const Header = () => {
         },
     ]
 
-    const [openMobileDrawer, setOpenMobileDrawer] = useState(true)
+    const [openMobileDrawer, setOpenMobileDrawer] = useState(false)
     const NavBarMenu = ({item}) => {
         const {type, path, label, color} = item
 
