@@ -25,7 +25,7 @@ const Header = () => {
     const navButton = [
         {
             type : "link",
-            path : "/",
+            path : "home",
             label : "Home",
             color : "primary"
         },
