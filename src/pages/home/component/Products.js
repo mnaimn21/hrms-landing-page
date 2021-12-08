@@ -16,7 +16,7 @@ const Products = () => {
         <Box sx={{backgroundSize:"cover", backgroundImage:`url(${bg_product})`, backgroundAttachment:"fixed", position:"relative"}}>
             <Box sx={{position:"absolute", backgroundColor:"black", opacity:0.25, width:"100%", height:"100%", zIndex:-1}}/>
             <Box py={8}>
-        1       <Container maxWidth="lg">
+                <Container maxWidth="lg">
                     <TitleAndSubtitle title="Our Products" subtitle="We produce the best HRMS products in the market"/>
                     <Box display={{xs:"none", lg:"block"}}>
                         <Grid container spacing={4}>
