@@ -1,0 +1,16 @@
+{
+    "data" : [
+        {
+            "title" : "Data Science",
+            "description" : "Data science solutions can work with your proprietary data and integrate it into your workflow. Additionally, all data is worked under secure access and stringent NDAs."
+        },
+        {
+            "title" : "RPA Services",
+            "description" : "Provide the most extensive portfolio of automation services with RPA technology for background checks and real credit, utility management, lease management, real estate."
+        },
+        {
+            "title" : "Consulting Services",
+            "description" : "Data analytics consulting solutions help customers identify and obtain the most valuable and meaningful insights from the data, and turn them all into competitive advantages."
+        }
+    ]
+}
