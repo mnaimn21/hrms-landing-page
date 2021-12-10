@@ -1,4 +1,4 @@
-## Basic Landing Page for HRSM web-app
+## Basic Landing Page for HRMS web-app
 
 
 Demo : https://awesome-hr.vercel.app/
