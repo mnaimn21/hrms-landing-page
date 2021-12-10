@@ -1,6 +1,10 @@
 ## Basic Landing Page for HRSM web-app
 
+
+Demo : https://awesome-hr.vercel.app/
+
 - Programing Languange : Javascript
-- Library : React.js
-- Framework : Material-UI
-- Stock photo : xframe.io
+- Library : React.js [ https://reactjs.org/ ]
+- Framework : Material-UI [ https://mui.com/ ]
+- Stock photo : xframe.io [ https://xframe.io/ ]
+- Deployment : vercel [ https://vercel.com/ ]
